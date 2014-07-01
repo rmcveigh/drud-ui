@@ -104,6 +104,10 @@ $(function () {
           }
       },
 
+      credits: {
+        enabled: false
+      },
+
       series: [{
           name: 'Response Time',
           data: [1],
@@ -161,6 +165,9 @@ $(function () {
             chart: {
                 zoomType: 'x'
             },
+            credits: {
+              enabled: false
+            },
             title: {
                 text: 'Server Performance Over Time'
             },
@@ -207,7 +214,7 @@ $(function () {
                 type: 'area',
                 name: 'Response Time',
                 pointInterval: 24 * 3600 * 1000,
-                pointStart: Date.UTC(2006, 0, 01),
+                pointStart: Date.UTC(2011, 0, 01),
                 data: [
                     0.8446, 0.8445, 0.8444, 0.8451,    0.8418, 0.8264,    0.8258, 0.8232,    0.8233, 0.8258,
                     0.8283, 0.8278, 0.8256, 0.8292,    0.8239, 0.8239,    0.8245, 0.8265,    0.8261, 0.8269,
@@ -351,6 +358,9 @@ $(function () {
                     }
                 }
             },
+            credits: {
+              enabled: false
+            },
             tooltip: {
                 pointFormat: '{series.name} used <b>{point.y:,.0f}</b><br/>minutes in {point.x}'
             },
@@ -417,9 +427,12 @@ $(function () {
                 }
             }
         },
+        credits: {
+          enabled: false
+        },
         tooltip: {
             shared: true,
-            valueSuffix: ' millions'
+            valueSuffix: ' '
         },
         plotOptions: {
             area: {
